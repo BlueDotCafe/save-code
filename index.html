@@ -98,19 +98,17 @@
 <!--BOOTSTRAP FROM https://mail.google.com/mail/u/0/#label/CODE/15bc5685b34d3ed1?projector=1 -->
 
 
-<h1 class="page-header">Page Header Class. <small>the inline small tag.</small></h1>
+<h1 class="page-header">Page Header Class adds font styling and underline. <small>the inline small tag.</small></h1>
 
 
 
 
-<p class="lead">The lead class adds a little size and thickness to text. So you can lead your website with it. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<p>The <mark>inline mark tag highlights the text.</mark>Pretty nice, right? Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+<p class="lead">The lead class adds a little size and thickness to text. So you can lead your website with it. <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<hr>
+<p>The <mark>inline mark tag highlights the text.</mark>Pretty nice, right? <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<hr>
 <p> There is another inline tag called <del>del, it crossed out the text.</del>Is that supposed to be for style or what?</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur <ul>does this underline?</ul>adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-
+<hr>
 
 
 <hr>
@@ -213,7 +211,8 @@
 <!--ABOVE IS THE DIV FOR THE CONTAINER. NOW STARTING BUTTON CLASSES IN NEW CONTAINER.-->
 
 <div class="container">
-  <h5 class="page-header">Below are bootsrap buttons, white color and stacked.</h5>
+  <h5>Below are bootsrap buttons, white color and stacked.</h5>
+  <br><br>
     <div class="row">
       <div class="col-md-3">
           <ul class="nav nav-tabs nav-stacked">
@@ -238,9 +237,9 @@
 <!--USE A BUTTON FOR A LINK-->
 
 <h5>Use a button for a link below.</h5>
-
+<br>
 <a href="#" class="btn btn-default" role="button">use an "a" tag and button class for a link</a>
-
+<br>
 <hr>
 
 <h5>Use a submit button below.</h5>
@@ -257,12 +256,96 @@
 <button class="btn btn-default btn-sm">btn btn-default btn-sm</button>
 <button class="btn btn-default btn-xs">btn btn-default btn-xs</button>
 <button class="btn btn-default" disabled="disabled">btn btn-default disabled</button>
-
+<br><br>
 <hr>
+
+</div> <!--closing div for button container-->
+
+<!--NOW ON TO FORMS WITH BOOTSTRAP (starting new container.)-->
+<div class="container">
+  <h5>Below are forms with Bootstrap. Notice all forms are wrapped in one form tag.</h5>
+<br><br>
+  <form>
+    <div class="form-group">
+      <label>Label for Form</label>
+      <input type="text" class="form-control" placeholder="Enter info in the placeholder">
+    </div>
+    <br><br>
+    <div class="form-group">
+      <label>Label for Email Form</label>
+      <input type="email" class="form-control" placeholder="Enter email in the placeholder">
+    </div>
+    <br><br>
+      <div class="form-group">
+        <label>Label Message Form</label>
+        <textarea class="form-control" placeholder="Enter message in the placeholder"></textarea>
+      </div>
+      <br><br>
+      <div class="form-group">
+        <label>Label for a selection form</label>
+        <select class="form-control">
+          <option value="Vanilla">Vanilla</option>
+          <option value="Chocolate">Chocolate</option>
+          <option value="Caramel">Caramel</option>
+          <option value="Strawberry">Strawberry</option>
+        </select>
+      </div>
+      <br><br>
+      <div class="form-group">
+        <label>Label for Upload File Form</label>
+        <br>
+        <input type="file">
+        <p class="help-block">the class help block / only png and jpg allowed</p>
+      </div>
+      <br><br>
+      <hr>
+      <div class="checkbox">
+        <label>Check the box you want
+          <br>
+          <input type="checkbox">
+          </label>
+      </div>
+      <hr>
+
+      <br><br><br>
+
+      <form class="form-inline">
+        <div class="form-group">
+          <label>Label for Email Input Form</label>
+          <input type="email" class="form-control" placeholder="placeholder for email">
+        </div>
+        <div class="form-group">
+          <label>Label for Password in Email Form</label>
+          <input type="password" class="form-control" placeholder="placeholder for password">
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Remember password
+          </label>
+          <button type="submit" class="btn btn-danger">Login</button>
+        </div>
+      </form>
+
+  </form>
+
+
+
+
+
+
+
+
 
 
 
 </div>
+
+
+
+
+
+
+
 
 
 
