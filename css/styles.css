@@ -4,3 +4,13 @@ img {
   height: 250px;
   width: 250px;
 }
+
+
+.style-panel-columns {
+  padding: 5px;
+  margin: 2px;
+}
+
+p {
+  padding: 3px;
+}
